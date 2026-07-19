@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+h1{
+    
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    background-color: rgb(214, 10, 10);
+    width: 84px;
+    height: 44px;
+    font-weight: 800;
+    font-size: large;
+    color: black;
+    padding: 12px;
+    margin: 12px;
+    
+    cursor: pointer;
+}

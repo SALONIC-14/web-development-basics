@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+h1{
+    font-size:xx-large;
+    font-weight: 600;
+    color:rgb(0, 118, 118);
+    
+    
+}
