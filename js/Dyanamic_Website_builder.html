@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            position: relative;
+            width: 78vw;
+            height: 70px;
+            border: 1px solid rgb(255, 255, 255);
+            border: none;
+            /* background-color: #0e0d0df9; */
+            background-color: rgb(19, 21, 23);
+        }
+        .img{
+            margin-left: 10px;
+            margin-top: 6px;
+            width: 107px;
+            height: 58px;
+            border: 1px solid black;
+            border-radius: 5.9px;
+            border: none;
+
+        }
+        h1{
+            margin-left: 10px;
+            font-size: 9.7px;
+            color: white;
+            cursor: pointer;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            line-height: 21px;
+            font-weight: 600;
+        }
+        .bottom{
+            display: flex;
+            position: absolute;
+            bottom: 29px;
+            left: 127px;
+            gap: 10px;
+            font-size: 8.5px;
+            color: rgb(175, 167, 167);
+            cursor: pointer;
+            z-index: 11;
+            font-family:sans-serif;
+            font-style: normal;
+
+        }
+        .img_time{
+            position: absolute;
+            bottom: 9px;
+            left: 91px;
+            font-size: 7.5px;
+            color: white;
+            background-color: rgba(28, 27, 27, 0.875);
+            padding: 1px 3px;
+            border-radius: 2.5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img" src="" alt="">
+        <div class="img_time"></div>
+        <h1></h1>
+        <!-- <h1>Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1</h1> -->
+
+        <div class="bottom">
+            <span class="codewithharry"></span>
+            <span class="views"></span>
+            <span class="date"></span>
+        </div>
+    </div>
+    <script src="Dyanamic_Website_builder.js"></script>
+</body>
+</html>

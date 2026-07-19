@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Css</title>
+    
+    
+</head>
+<body>
+   <ol>
+        
+        <u><li>Inline Css</li></u>
+        <dd>
+            CSS is written directly inside the HTML element using the style attribute.
+            <ul>
+                <li style="border: 4px double rgb(248, 166, 166) ; background-color: black; color: aliceblue;">Syntax :- &lt;h1 style="color: red; font-size: 30px;"&gt;Hello World&lt;/h1&gt;
+                </li>
+                <li style="border: 4px double palevioletred;">Output:-
+                    <h1 style="color: red; font-size: 30px;">Hello World</h1>
+
+                </li>
+            </ul>
+        </dd>
+
+
+        <u><li>Internal Css</li></u>
+        <dd>
+            <ul>
+                <li>CSS is written inside the &lt;style&gt; tag in  the &lt;head&gt; section of the HTML file.</li>
+                <li>Styles apply only to that single page.</li>
+                <li>Syntax:-
+                    <pre style="border: 4px double rgb(248, 166, 166) ; background-color: black; color: aliceblue;">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                        &lt;style&gt;
+                            h1 {
+                            color: blue;
+                            text-align: center;
+                            }
+                        &lt;/style&gt;
+                        &lt;/head&gt;
+                        &lt;body>
+                        &lt;h1>Hello World &lt;/h1&gt;
+                        &lt; /body &gt;
+                        &lt; /html &gt;
+                    </pre>
+                    
+                        <li style="border: 4px double palevioletred;">Output:- <br></li>
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                        <style>
+                            h1 {
+                            color: blue;
+                            text-align: center;
+                            }
+                        </style>
+                        </head>
+                        <body>
+                        <h1>Hello World</h1>
+                        </body>
+                        </html>
+
+                    
+                </li>
+            </ul>
+        </dd>
+        <li><u>External Css></u></li>
+        <ul>
+            <li>
+                CSS is written in a separate .css file and linked to the HTML using &lt;link&gt;.
+            </li>
+            <li>
+                Best for large websites because the same stylesheet can be reused.
+            </li>
+            <li>
+                Syntax:- <br>
+                <pre style="border: 4px double rgb(248, 166, 166) ; background-color: black; color: aliceblue;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;h1>Hello World&lt;/h1&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+
+                </pre>
+
+            </li>
+            <li>
+                <br>
+                Output :-
+                <div style="border: 4px double palevioletred ;">
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                      <link rel="stylesheet" type="text/css" href="style.css">
+                    </head>
+                    <body>
+                      <h1>Hello World</h1>
+                    </body>
+                    </html>
+
+                </div>
+            </li>
+        </ul>
+
+   </ol>
+</body>
+</html>

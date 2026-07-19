@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXE_ANIMATION</title>
+    <style>
+        * {
+
+            background-color: rgb(0, 255, 238);
+        }
+
+        .con {
+            display: flex;
+            position: relative;
+            top: 20px;
+            /* left: 10px; */
+            background-color: azure;
+            width: 95vw;
+            height: 40vw;
+            justify-content: start;
+            align-items: end;
+            padding: 10px;
+            justify-self: center;
+            align-self: center;
+            overflow: hidden
+        }
+
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(203, 24, 24);
+            border-radius: 100%;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: xy 5s linear 1s infinite forwards;
+
+        }
+
+        @keyframes xy {
+
+            0% {
+                transform: translate(0vw, 0vh);
+            }
+
+            25% {
+                transform: translate(25vw, -30vh);
+            }
+
+            50% {
+                transform: translate(50vw, 0vh);
+            }
+
+            75% {
+                transform: translate(75vw, -30vh);
+            }
+
+            100% {
+                transform: translate(90vw, 0vh);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="box">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

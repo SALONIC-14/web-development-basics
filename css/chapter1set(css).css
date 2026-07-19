@@ -1,0 +1,25 @@
+#a1{
+    background-color: purple;
+}
+
+.pink{
+    color: palevioletred;
+}
+
+
+.classcolor{
+    color: azure;
+}
+
+.classBG{
+    background-color: black;
+}
+
+.classBorder{
+    border: 5px solid rgb(255, 0, 0);
+
+}
+.classpadding{
+    padding: 20px ;
+
+}

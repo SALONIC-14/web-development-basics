@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a =prompt("Enter a number");
+        // let b = prompt("Enter another number");
+        // if (isNaN(a) || isNaN(b)){
+        //     // throw SyntaxError("Please enter a valid number");
+        //     throw new Error("Please enter a valid number");
+
+        // }
+        // let sum = Number(a) + Number(b);
+        // // let x=0;
+        // try {
+        //    console.log('sum' , sum*x); 
+        // } catch (error) {
+        //     console.log('An error occurred  name i.e.: ' + error.name);
+        //     console.log('An error occurred  message i.e.: ' + error.message);
+        //     console.log('An error occurred  stack i.e.: ' + error.stack);
+            
+            
+        // }
+        
+        function sum(){
+            let a =prompt("Enter a number");
+            let b = prompt("Enter another number");
+            if (isNaN(a) || isNaN(b)){
+                // throw SyntaxError("Please enter a valid number");
+                throw new Error("Please enter a valid number");
+
+            }
+            // let x=0;
+            try {
+                console.log('sum' , Number(a) + Number(b)+x);
+                return true
+            } catch (error) {
+                console.log('An error occurred  name i.e.: ' + error.name);
+                console.log('An error occurred  message i.e.: ' + error.message);
+                console.log('An error occurred  stack i.e.: ' + error.stack);
+                return false;
+            }
+            finally{
+                console.log("This block will always execute even if there is a return statement in the try or catch block used in the function");
+            }
+
+
+            
+        }
+        sum();
+    </script>
+</body>
+</html>

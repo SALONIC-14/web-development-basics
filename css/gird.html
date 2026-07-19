@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .g{
+            border:2PX solid black ;
+            width: 80hw;
+            height:20vw;
+            display: grid;
+            grid-template-columns: 100px 120px 130px;
+            grid-template-rows: 100px 100px 100px;
+            
+        }
+        .g11{
+            border: 2px solid purple;
+            width: 70px;
+            height: 70px;
+        }
+        .g1{grid-column: 3/4;
+            grid-row:-2/-3;
+        }
+        .g2{grid-column: 2/3;
+            grid-row:-2/-3;
+        }
+        .g3{grid-column: 1/2;
+            grid-row:-2/-3;
+        }
+        .g4{grid-column: 3/4;
+            grid-row:-4/-3;
+        }
+        .g5{grid-column:2/3;
+            grid-row:1/2;
+        }
+        .g6{grid-column: 1/2;
+            grid-row:-3/-4;
+        }
+    </style>
+</head>
+<body>
+    <div class =g>
+        <div class="g11 g1">1</div>
+        <div class="g11 g2">2</div>
+        <div class="g11 g3">3</div>
+        <div class="g11 g4">4</div>
+        <div class="g11 g5">5</div>
+        <div class="g11 g6">6</div>
+        
+    </div>
+</body>
+</html>

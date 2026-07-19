@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b{
+            height: 20px;
+            width: 60px;
+            border: 2px solid rgba(0, 0, 0, 0.534);
+            border-radius: 2px;
+            font-size: 7px;
+            background-color: rgb(168, 234, 250);
+            color: black;
+
+        }
+        .b{
+            transition: transform 0.2s ease;
+        }
+
+        .b:hover {
+            transform: scale(1.1);
+            background-color: rgb(19, 196, 255);
+            color: rgb(0, 0, 0);
+
+        }
+    </style>
+</head>
+<body>
+    <!-- The Local Storage Manager: You are working on a note-taking app, and you want to implement a function named saveNoteToLocalStorage that takes a note object and saves it to the browser's local storage. -->
+    <div class="container">
+        <button class="b">ADD NOTES</button>
+    </div>
+    <div class="keep"></div>
+
+
+
+    <script>
+        
+
+        function saveNoteToLocalStorage (a){
+            localStorage.setItem("notes", a)
+
+        }
+
+        document.querySelector(".b").addEventListener("click",()=>{
+            let a=prompt("ENTER YOUR NOTES")
+            saveNoteToLocalStorage(a)
+            document.querySelector(".keep").innerHTML=a
+
+        })
+    </script>
+    <script src="problem_8.js"></script>
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit_download</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(255, 255, 255);
+            height: 17vh;
+
+
+        }
+
+        img {
+            margin-left: 60px;
+            margin-top: 26px;
+        }
+
+        .navol {
+            position: relative;
+            list-style: none;
+            display: flex;
+            gap: 36px;
+            left: 370px;
+            top: -34px
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: rgb(41, 41, 40);
+        }
+
+        span {
+            position: relative;
+
+            font-weight: bolder;
+            top: -6px;
+            margin-left: 8px;
+
+
+        }
+
+        .download_button {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border: 2px solid black;
+            width: 129px;
+            height: 33px;
+            border-radius: 3px;
+            font-size: medium;
+            left: 983px;
+            top: -70px;
+            font-weight: bolder;
+
+        }
+
+        .ENGLISH {
+            position: relative;
+            display: flex;
+            left: 1136px;
+            top: -97px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 1;
+
+        }
+
+        .lang_icon {
+            color: rgb(0, 0, 0);
+            top: -2.9px;
+            font-family: "Segoe UI Symbol", Arial, sans-serif;
+            font-size: 20px;
+            margin-right: 4px;
+        }
+
+        .button1 {
+            position: relative;
+            background-color: #ffffff;
+            border: none;
+            color: black;
+            left: 1248px;
+            top: -130px;
+            
+        }
+        
+
+        .h1_main {
+            text-align: center;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+        }
+
+        h1 img {
+            margin-left: 14px;
+        }
+
+
+
+        h2 {
+            text-align: center;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 40px;
+            margin-left: 3px;
+            color: rgb(27, 27, 27)
+        }
+
+        .download_button_center {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .download_button_center button {
+            position: relative;
+            display: flex;
+            width: 301px;
+            height: 47px;
+            background-color: #00b6d1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 15px;
+            font-size: 13px;
+
+            cursor: pointer;
+            left: 545px;
+            top: -4px;
+            justify-content: center;
+            align-items: center;
+            font-weight: 790;
+            font-size: 14px;
+            font-style: normal;
+            text-decoration: none;
+
+        }
+
+        .start img {
+            position: relative;
+            width: 52px;
+            height: 54px;
+            top: 47px;
+            left: 135px;
+            border: 2px solid black;
+            border-radius: 100%;
+        }
+
+        h3 {
+            margin-left: 263px;
+            margin-top: 0px;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            font-weight: 100;
+        }
+
+        .small {
+            display: inline-block;
+            position: relative;
+            top: -20px;
+            left: 469px;
+            font-size: 15px;
+
+        }
+
+        .boxes {
+            position: relative;
+            display: grid;
+            border: none;
+            height: 873px;
+            width: 69.5vw;
+            grid-template-columns: 300px 300px 300px;
+            gap: 22px;
+
+            top: 20px;
+            left: 10px;
+            margin: 20px auto;
+
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            background-color: #f3f3f3;
+            border: none;
+            border-radius: 7px;
+        }
+
+        h4 {
+            margin: 24px auto;
+            font-size: 20px;
+            text-align: center;
+
+
+        }
+
+        h5 {
+            font-size: 14px;
+            text-align: center;
+            margin-top: -11px;
+            margin-bottom: 19px;
+
+            font-weight: lighter;
+        }
+
+        .button {
+            position: relative;
+
+             display: block;
+            background-color: #5cb85c;
+            border: none;
+            border-radius: 6px;
+            font-size: 11px;
+
+            padding: 8px 16px;
+
+            width: 131px;
+            height: 27px;
+            left: -21px;
+            margin-left: 89px;
+            color: white;
+           
+            text-decoration: none;
+            text-align: center;
+            margin-top: -1px;
+           
+            font-weight: 900;
+
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: normal;
+
+
+        }
+/* 
+
+        .small_1 {
+            display: block;
+            font-size: 11.1px;
+            text-align: center;
+            margin-top: 13px;
+        }
+
+
+        .small_2 {
+            display: block;
+            font-size: 8.7px;
+            text-align: center;
+            margin-top: -14px;
+            line-height: 1.9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="	https://www.ultraedit.com/wp-content/uploads/2023/01/Frame-1-2.png" alt="LOGO">
+            <div class="divol">
+                <ol class="navol">
+                    <li>Products<span>&#x2304;</span></li>
+                    <li>Pricing<span>&#x2304;</span></li>
+                    <li>Resources<span>&#x2304;</span></li>
+                    <li>Our company<span>&#x2304;</span></li>
+                </ol>
+                <div class="download_button">DOWNLOAD</div>
+                <div class="ENGLISH">
+                    <span class="lang_icon">&#x1F310;</span>
+                    English
+                </div>
+
+                <div>
+
+                    <button class="button1"><i
+                            class="fa-solid fa-magnifying-glass fa-flip-horizontal fa-2x"></i></button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <br>
+        <br>
+        <h1 class="h1_main">Download <strong style="font-weight: 700;">UltraEdit</strong> for Windows
+            <img decoding="async" src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" width="112"
+                height="32" alt="Reviews" class="wp-image-1613 alignnone size-full">
+        </h1>
+        <h2>
+            Download and try UltraEdit before you buy it! This download includes the full Windows <br>
+            version of the text editor.
+        </h2>
+
+        <div class="download_button_center">
+            <button>
+                DOWNLOAD MAC OR LINUX VERSION
+            </button>
+        </div>
+
+        <div class="start">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_black-new.png" alt="LOGO">
+
+            <h3>Download UltraEdit</h3>
+            <small class="small">
+                v2025.0.0.39 (released 2025-08-06) | Latest changes
+            </small>
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <h4>English</h4>
+                <h5>&nbsp;</h5>
+
+                <div>
+                   <a  class="button" href="pdf/ue_english_64.exe" download>Download 64-bit</a>
+                </div>
+                <div>
+                    <small class="small_1">
+                        SHA256
+                        <small class="small_2">
+                            <br>
+                            FC88DD0B44CF0A7DE31AE2C413D145E351AA7A6E7DF4A44BC4
+                            <br>
+                            A34E5184378E
+                        </small>
+
+                    </small>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h4>Deutsch</h4>
+                <h5>German</h5>
+                <div>
+                    <a  class="button" href="pdf/ue_english_64.exe" download>Download 64-bit</a>
+                </div>
+                <div>
+                    <small class="small_1">
+                        SHA256
+                        <small class="small_2">
+                            <br>
+                            FC88DD0B44CF0A7DE31AE2C413D145E351AA7A6E7DF4A44BC4
+                            <br>
+                            A34E5184378E
+                        </small>
+
+                    </small>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h4>Italiano</h4>
+                <h5>Italian</h5>
+                <div>
+                    <a  class="button" href="pdf/ue_english_64.exe" download>Download 64-bit</a>
+                </div>
+                <div>
+                    <small class="small_1">
+                        SHA256
+                        <small class="small_2">
+                            <br>
+                            FC88DD0B44CF0A7DE31AE2C413D145E351AA7A6E7DF4A44BC4
+                            <br>
+                            A34E5184378E
+                        </small>
+
+                    </small>
+                </div>
+
+            </div>
+
+
+
+            <div class="box">
+                <h4>Español</h4>
+                <h5>Spanish</h5>
+                <div>
+                    <a  class="button" href="pdf/ue_english_64.exe" download>Download 64-bit</a>
+                </div>
+                <div>
+                    <small class="small_1">
+                        SHA256
+                        <small class="small_2">
+                            <br>
+                            FC88DD0B44CF0A7DE31AE2C413D145E351AA7A6E7DF4A44BC4
+                            <br>
+                            A34E5184378E
+                        </small>
+
+                    </small>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h4>français</h4>
+                <h5>French</h5>
+                <div>
+                    <a  class="button" href="pdf/ue_english_64.exe" download>Download 64-bit</a>
+                </div>
+                <div>
+                    <small class="small_1">
+                        SHA256
+                        <small class="small_2">
+                            <br>
+                            FC88DD0B44CF0A7DE31AE2C413D145E351AA7A6E7DF4A44BC4
+                            <br>
+                            A34E5184378E
+                        </small>
+
+                    </small>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h4>Português brasileiro</h4>
+                <h5>Brazilian Portuguese
+                </h5>
+                <div>
+                    <a  class="button" href="pdf/ue_english_64.exe" download>Download 64-bit</a>
+                </div>
+                <div>
+                    <small class="small_1">
+                        SHA256
+                        <small class="small_2">
+                            <br>
+                            FC88DD0B44CF0A7DE31AE2C413D145E351AA7A6E7DF4A44BC4
+                            <br>
+                            A34E5184378E
+                        </small>
+
+                    </small>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h4>日本</h4>
+                <h5>Japanese</h5>
+                <div>
+                    <a  class="button" href="pdf/ue_english_64.exe" download>Download 64-bit</a>
+                </div>
+                <div>
+                    <small class="small_1">
+                        SHA256
+                        <small class="small_2">
+                            <br>
+                            FC88DD0B44CF0A7DE31AE2C413D145E351AA7A6E7DF4A44BC4
+                            <br>
+                            A34E5184378E
+                        </small>
+
+                    </small>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h4>한국어</h4>
+                <h5>Korean</h5>
+                <div>
+                    <a  class="button" href="pdf/ue_english_64.exe" download>Download 64-bit</a>
+                </div>
+                <div>
+                    <small class="small_1">
+                        SHA256
+                        <small class="small_2">
+                            <br>
+                            FC88DD0B44CF0A7DE31AE2C413D145E351AA7A6E7DF4A44BC4
+                            <br>
+                            A34E5184378E
+                        </small>
+
+                    </small>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h4>华语</h4>
+                <h5>Chinese</h5>
+                <div>
+                    <a  class="button" href="pdf/ue_english_64.exe" download>Download 64-bit</a>
+                </div>
+                <div>
+                    <small class="small_1">
+                        SHA256
+                        <small class="small_2">
+                            <br>
+                            FC88DD0B44CF0A7DE31AE2C413D145E351AA7A6E7DF4A44BC4
+                            <br>
+                            A34E5184378E
+                        </small>
+
+                    </small>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h4>華語</h4>
+                <h5>Traditional Chinese</h5>
+                <div>
+                    <a  class="button" href="pdf/ue_english_64.exe" download>Download 64-bit</a>
+                </div>
+                <div>
+                    <small class="small_1">
+                        SHA256
+                        <small class="small_2">
+                            <br>
+                            FC88DD0B44CF0A7DE31AE2C413D145E351AA7A6E7DF4A44BC4
+                            <br>
+                            A34E5184378E
+                        </small>
+
+                    </small>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

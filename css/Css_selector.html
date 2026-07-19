@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    
+     <style>
+
+        /* <!-- Class Selector --> */
+        .pink{
+            color: pink;
+        }
+
+
+    /* <!-- Id Selector --> */
+    #green{
+        color: green;
+    }
+
+    /* child Selector */
+    div >p.blue{
+        background-color: blue;
+    }
+
+    /* Descendant Selector */
+    span p {
+        color: blanchedalmond;
+        background-color: black;
+
+    }
+
+
+    /* <!-- universal selector --> */
+    *{
+        border: 1px dotted ;
+    }
+
+
+    /* pseudo selector */
+
+    a:visited{
+        color: black;
+    }
+    a:link{
+        color: brown;
+    }
+    a:active{
+        background-color: pink ;
+    }
+    a:hover{
+        background-color: chartreuse;
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Class Selector -->
+     <div class="pink">
+        I m colored Through the Class selector using .pink{color:pink;}
+     </div>
+
+    <!-- Id Selector -->
+     <div id="green">
+        I m colored Through the Id Selector using #green{color:green;}
+     </div>
+
+     <!-- child Selector -->
+      <div>
+        
+            <p class="blue">I  m  paragraph inside the div </p>
+      </div>
+
+      <!-- /* Descendant Selector */ -->
+       <span>
+            <article>
+                <p >
+                   I  m  paragraph inside the Article and span 
+                </p>
+            </article>
+       </span>
+
+     <a href="https://www.google.com">google</a>  
+        
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+       display: flex;
+       position: relative;
+       z-index: 10;
+       width:auto;
+       height: 5vh;
+       /* top: 20vh; */
+       padding-top: 3px;
+       
+       /* margin-left: 10px; */
+       /* border: 2px solid springgreen; */
+}
+
+.main {
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    gap: 4px;              /* space between left & right */
+    padding: 10px;          /* margin from screen edges */
+    box-sizing: border-box;
+    
+}
+
+
+
+.left {
+    width: 32%;    
+    height: 89%;         /* fixed sidebar */
+    background-color: #121212;
+    border-radius: 4px;
+    /* margin-top: 24px; */
+        margin-left: -6px;
+}
+.your_library{
+    color: #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 7.8px;
+    font-weight: 700;
+    font-style: normal;
+    /* line-height: normal; */
+    margin-top: 15px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.create{
+
+    color: #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 7.8px;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #313131 ;
+    height: 17px;
+    width: 58.5px;
+     display: flex;
+     cursor: pointer;
+     border-radius: 8px;
+     margin-top: 6px;
+     margin-left: 21px;
+     margin-right: 12px;
+     align-items: center;
+     justify-content: center;
+
+}
+
+.right {
+    height: 89%; 
+    flex: 1;                /* takes remaining space */
+    background-color: #212121;
+    border-radius: 4px;
+    /* margin-top: 24px; */
+    margin-right: -6px;
+    padding-left: 12px;
+}
+.spotify_img {
+    margin-right: 11px;
+    filter: invert(1);
+    display: flex;
+    width: 21px;
+    height: 16px;
+    cursor: pointer;
+    margin-left: 13px;
+}
+
+.home_logo{
+  filter: invert(1);
+  /* border: 2px red solid; */
+    width: 24px;
+    height: 12px;
+  cursor: pointer;
+    /* margin-left: 2px; */
+    object-fit: contain;
+}
+.borderforhome-img{
+    /* border: 1px solid white ; */
+    height: 20px;
+    border-radius: 100%;
+    width: 24px;
+    margin-top: -1px;
+    border: none;
+    background-color:#212121;
+}
+.premium-support-download{
+    display: inline-block;
+    position: relative;
+    font-size: 9px;
+    font-weight: bold;
+    font-family: ui-sans-serif;
+    cursor: pointer;
+    right: -321px;
+    padding: 3px;
+
+    
+}
+.vertical-line{
+    margin-left: 3px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #FFFFFF;
+    display: inline-block;
+    position: relative;
+    /* right: -326px;
+    top:-4px; */
+
+
+}
+.vertical-and-after{
+    right: -326px;
+    top:-4px; 
+    display: inline-block;
+    position: relative;
+}
+.install-img {
+    position: relative;
+    right: -18px;
+    top: -17px;
+}
+.install-img > svg{
+     
+    color: #969696;
+    fill: currentColor;
+}
+   

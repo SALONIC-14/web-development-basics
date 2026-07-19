@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid rgb(255, 0, 43);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="display: none;" data-anyname="by shra"> I am a Box1</div>
+        <div class="box2"> I am a Box2</div>
+    </div>
+    <script>
+        let div1 = document.createElement("div") // created element div
+        div1.innerHTML = "I AM inserted here using appendChild"; // this is the inner text
+        div1.setAttribute("class" ,"box11");  // to give attributes to div
+
+        let div2= document.createElement("div");
+        div2.innerHTML="I m inserted here using the prepend"
+        div2.setAttribute("class" ,"box22");    
+
+        let div3= document.createElement("div");
+        div3.innerHTML="I m inserted here using the before"
+        div3.setAttribute("class" ,"box33"); 
+
+        let div444= document.createElement("div");
+        div444.innerHTML="I m inserted here using the after"
+        div444.setAttribute("class" ,"box444"); 
+
+        let div4= document.createElement("div");
+        div4.innerHTML="I m inserted here using the after"
+        div4.setAttribute("class" ,"box44"); 
+
+        let div5= document.createElement("div");
+        div5.innerHTML="I m repalced "
+        div5.setAttribute("class" ,"box55"); 
+
+
+        // inserting 
+            // ###1. using appendChild    // into  the container
+            document.querySelector(".container").appendChild(div1)
+
+            // ###2 node.prepend(e)  
+            // will insert at the begining of node
+
+            document.querySelector(".container").prepend(div2)
+
+            // ###3 node.before(e)
+            //  e will be inserted before the node
+            document.querySelector(".container").before(div3)
+
+            // ###4 node.after(e)
+            //  e wil be inserted after the node
+            document.querySelector(".container").after(div444)
+            document.querySelector(".container").after(div4)
+
+            //  ###5 node.replacewith(e)
+            //  node will be repalced by the e 
+            document.querySelector(".box44").replaceWith(div5)
+        
+    </script>
+    <script src="Inserting_removingElement.js"></script>
+</body>
+</html>

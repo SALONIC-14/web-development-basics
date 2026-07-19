@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTOR</title>
+</head>
+<style>
+    .box:first-child {
+        background-color: rgb(239, 133, 133);
+
+    }
+
+    .box:first-child::first-line {
+        color: rgb(0, 230, 8);
+    }
+    .boxes *{
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+    }
+    /* div ,[data-color="primary"]{
+        margin-top: 13px;
+        margin-left: 40px ;
+        border-radius:13px ; */
+    /* } */
+
+    /* .box:nth-child(even){
+        background-color: rgb(3, 0, 0);
+        color: white;
+    } */
+
+    .boxes::before{
+        content: "Before Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sapiente, adipisci, possimus";
+        color: rgb(237, 147, 147);
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+     }
+   
+    
+     .boxes::after{
+        content: "After Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sapiente, adipisci, possimus";
+        color: rgb(237, 147, 147);
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        
+     }
+     .box::first-letter{
+        font-size: 40px;
+        color: saddlebrown;
+     }
+
+     ::selection{
+        background-color: black;
+        color: white;
+     }
+
+</style>
+
+<body>
+    <div  class="boxes">
+        <div data-color ="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sapiente, adipisci, possimus
+            repellendus quas explicabo velit nulla laboriosam, assumenda culpa reiciendis ratione nemo?</div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, architecto!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing.
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

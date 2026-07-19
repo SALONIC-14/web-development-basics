@@ -1,0 +1,17 @@
+.bg_black{
+    background-color: black;
+}
+.flex{
+    display: flex;
+}
+.relative{
+    position: relative;
+}
+
+.bg_grey {
+    background-color:#212121;
+}
+.color-white{
+    color: #969696;
+}
+

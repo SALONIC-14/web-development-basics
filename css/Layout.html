@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        :root {
+            --bg: black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ol li {
+            list-style: none;
+            display: inline-block;
+            margin: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            /* border: 2px solid red; */
+            /* padding:  6px 13px 8px 13px; */
+            /* box-sizing: border-box; */
+        }
+
+        header {
+            z-index: 111;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ol {
+            background-color: var(--bg);
+
+
+
+        }
+
+        li:hover {
+            font-size: larger;
+            color: rgb(255, 0, 0);
+            background-color: aliceblue;
+            cursor: pointer;
+
+
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        .box {
+            height: 480px;
+            width: 565px;
+            border: 4px solid black;
+            margin: 80px 10px 100px 40px;
+
+
+        }
+
+        main {
+            display: flex;
+
+        }
+
+        .box1 {
+            position: relative;
+            left: 20px;
+            top: -35px;
+
+        }
+
+        .box2 {
+            position: relative;
+            left: 65px;
+            top: -35px;
+        }
+
+        .boxx {
+            position: relative;
+            border: 2px solid black;
+            height: 180px;
+            width: 1170px;
+            border-radius: 29px;
+
+            margin: 0 auto;
+            top: -80px;
+        }
+
+        h2 {
+            color: purple;
+            text-align: center;
+            border: 2px dotted black;
+            background-color: coral;
+        }
+
+        .p {
+            margin-top: 12px;
+            font-size: 16.10px;
+            color: rgb(36, 36, 36);
+            padding: 12px;
+
+
+
+        }
+
+        img {
+            position: fixed;
+            top: 540px;
+            right: -0px;
+            height: 72px;
+            width: 72px;
+        }
+
+        .pp {
+            font-family: cursive;
+            font-size: 17px;
+            color: rgb(0, 0, 0);
+            margin-top: 13px;
+            padding: 13px;
+            text-align: center;
+        }
+
+        .box3 {
+            background-color: antiquewhite;
+        }
+
+        .end {
+            border: 1px solid black;
+            height: 300px;
+            width: 100vw;
+            background-color: rgb(48, 48, 48);
+            margin-bottom: 0px;
+        }
+
+        .endd {
+            border: 1px solid black;
+            height: 38px;
+            width: 100vw;
+            background-color: rgb(0, 0, 0);
+
+        }
+
+        h1 {
+            color: aliceblue;
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        ul li {
+            color: aliceblue;
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* #header{
+            border: 2px solid red;
+            position: relative;
+            left: 1150px;
+            top: -95px;
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+            font-size: larger;
+            z-index: 11;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="">HOME</a><a></li>
+                <li><a href="">PROFILE</li></a></li>
+                <li><a href="">ABOUT</li></a></li>
+                <li><a href="">CONTACT</li></a></li>
+                <li><a href="">SERVICES</li></a></li>
+            </ol>
+            <!-- <div id="header">STUDY HARD</div> -->
+        </nav>
+    </header>
+
+    <main>
+        <div class="box box1">
+            <h2>AI</h2>
+            <p class="p"><u><b>Artificial intelligence (AI)</b></u> is the capability of computational systems to
+                perform tasks
+                typically
+                associated with human intelligence, such as learning, reasoning, problem-solving, perception, and
+                decision-making. It is a field of research in computer science that develops and studies methods and
+                software that enable machines to perceive their environment and use learning and intelligence to take
+                actions that maximize their chances of achieving defined goals.[1]
+            </p>
+            <p class="p">
+                High-profile applications of AI include advanced web search engines (e.g., Google Search);
+                recommendation systems (used by YouTube, Amazon, and Netflix); virtual assistants (e.g., Google
+                Assistant, Siri, and Alexa); autonomous vehicles (e.g., Waymo); generative and creative tools (e.g.,
+                language models and AI art); and superhuman play and analysis in strategy games (e.g., chess and Go).
+                However, many AI applications are not perceived as AI: "A lot of cutting edge AI has filtered into
+                general applications, often without being called AI because once something becomes useful enough and
+                common enough it's not labeled AI anymore."[2][3]
+            </p>
+            <p class="p">
+                Various subfields of AI research are centered around particular goals and the use of particular tools.
+
+            </p>
+        </div>
+
+        <div class="box box2">
+            <h2>DS</h2>
+            <p class="p"><u><b>Data science</b></u> is an in-demand career path for people with an aptitude for
+                research,
+                programming, math, and computers. Discover real-world applications and job opportunities in data science
+                and what it takes to work in this exciting field.</p>
+            <p class="p"><u><b>Data science</b></u> is an interdisciplinary field that uses algorithms, procedures, and
+                processes
+                to examine large amounts of data in order to uncover hidden patterns, generate insights, and direct
+                decision-making. To create prediction models, data scientists use advanced machine learning algorithms
+                to sort through, organize, and learn from structured and unstructured data. </p>
+            <p class="p">As a fast-growing field with applications across numerous industries, data science offers a
+                variety of in
+                the real world, the job outlook for the field, its required skills, and what credentials you need to
+                land a job. Afterward, if you want to prepare for a career in data, consider enrolling in the Google
+                Data Analytics Professional Certificate.</p>
+            <p class="p">Data science is the study of data, much like marine biology is the study of sea-dwelling
+                biological life
+                forms. </p>
+
+        </div>
+        <div><img src="https://tse3.mm.bing.net/th/id/OIP.jAaV3wg6lx0vXm3yYRqduwHaHa?pid=Api&h=220&P=0" alt=""></div>
+
+    </main>
+    <div class=" boxx box3">
+        <p class="pp">
+            <u><b>Artificial intelligence (AI)</b></u> refers to the simulation of human intelligence in machines. They
+            solve problems
+            faster than human beings. Speech recognition, translation tools, etc. are the building areas of AI.
+        </p>
+        <p class="pp"><u><b>Data science</b></u> and Artificial Intelligence are two most exciting areas in tech today,
+            but they often get mixed
+            up. Both use large amounts of data to find insights and make decisions, but they do it in different ways and
+            for different purposes.</p>
+    </div>
+    <footer>
+        <div class="end">
+            <h1>STUDY HARD</h1>
+            <p class="study">
+            <ul>
+                <li>
+                    Study Hard — A place to explore and understand topics like AI, Data Science, and more..
+                </li>
+                <li>
+                    Study Hard helps you learn complex study topics in a simple and easy way.
+                </li>
+                <li>
+                    Powered by Study Hard — your guide to AI, Data Science, and beyond.
+                </li>
+            </ul>
+            </p>
+            <p >
+
+                
+            </p>
+        </div>
+        <div class="endd">
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+        }
+        .box1{
+            border: 3px dotted rgb(178, 0, 0);
+            width: 80px;
+            height: 40px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+            transform: rotate(-45deg);
+            transform-origin: 100%;
+
+
+
+        }
+        .box2{
+             border: 3px dotted rgb(0, 255, 21);
+            width: 80px;
+            height: 40px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(250px);
+            transform-origin: 180% rotate(45deg);
+            transform: translate(250px) rotate(45deg);
+    transform-origin: center;
+    
+            
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            BOX
+        </div>
+        <div class="box2">
+            BOX
+        </div>
+    </div>
+</body>
+</html>

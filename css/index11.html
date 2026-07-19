@@ -1,0 +1,119 @@
+<section class="trending">
+  <h2>Trending Now</h2>
+  <div class="scroll-btn left">&#10094;</div>  <!-- add this -->
+  <div class="scroll-btn right">&#10095;</div> <!-- add this -->
+  <div class="trending-list">
+    <div class="card">
+      <span class="rank">1</span>
+      <img src="pdf/img/1.jpg" alt="Show 1">
+    </div>
+    <div class="card">
+      <span class="rank">2</span>
+      <img src="pdf/img/2.jpg" alt="Show 2">
+    </div>
+    <div class="card">
+      <span class="rank">3</span>
+      <img src="pdf/img/3.jpg" alt="Show 3">
+    </div>
+    <div class="card">
+      <span class="rank">4</span>
+      <img src="pdf/img/4.jpg" alt="Show 4">
+    </div>
+    <div class="card">
+      <span class="rank">5</span>
+      <img src="pdf/img/5.jpg" alt="Show 5">
+    </div>
+    <div class="card">
+      <span class="rank">6</span>
+      <img src="pdf/img/6.jpg" alt="Show 6">
+    </div>
+    <div class="card">
+      <span class="rank">7</span>
+      <img src="pdf/img/7.jpg" alt="Show 7">
+    </div>
+  </div>
+</section>
+
+
+
+.trending {
+  position: relative;
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+  overflow: hidden;
+}
+
+.trending h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.trending-list {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.trending-list::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 200px;
+  height: 120px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rank {
+  position: absolute;
+  left: -10px;
+  bottom: 5px;
+  font-size: 60px;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 6px black;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 25px;
+  width: 35px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: default;
+  user-select: none;
+  z-index: 20;
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
